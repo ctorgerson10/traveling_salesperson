@@ -37,7 +37,7 @@ def hill_climbing_search(cities: list[City]) -> list[City]:
             # Swap adjacent cities
             new_tour[i], new_tour[next_city_idx] = new_tour[next_city_idx], new_tour[i]
 
-            # Calculate the new tour distance
+            # get distance for new tour
             new_distance = get_total_distance(new_tour)
 
             # If the new tour is better, accept
@@ -48,3 +48,6 @@ def hill_climbing_search(cities: list[City]) -> list[City]:
                 break  # restart the loop from the first city
 
     return current_tour
+
+def simulated_annealing(cities: list[City]) -> list[City]:
+    pass
