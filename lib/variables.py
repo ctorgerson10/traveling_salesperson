@@ -3,4 +3,4 @@ class Variables:
     HEIGHT = 400
     NUM_CITIES = 10
     CITY_SIZE = 10
-    SLEEP_TIME = 100
+    SLEEP_TIME = 10
